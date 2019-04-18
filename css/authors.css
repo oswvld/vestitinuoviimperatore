@@ -1,0 +1,138 @@
+#pg-authors .area-utile{
+	background-color: #4F372F;
+	border-radius: 30px;
+}
+
+#pg-authors .section-title{
+	position: absolute;
+	bottom: 30px;
+	right: 50px;
+	z-index: 20;
+}
+
+#pg-authors .btn-home {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 20;
+	cursor: pointer;
+    transform: scale(0.7);
+}
+
+#pg-authors .img-authors {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+	border-radius: 30px;
+}
+
+#hover_alena{
+	position: absolute;
+    width: 100px;
+    height: 200px;
+    z-index: 20;
+    cursor: pointer;
+    top: 281px;
+    left: 758px;
+}
+
+#nuvola_alena {
+	position: absolute;
+    z-index: 10;
+    top: 180px;
+    left: 555px;
+    width: auto;
+}
+
+#hover_dani {
+	position: absolute;
+    width: 100px;
+    height: 200px;
+    z-index: 20;
+    cursor: pointer;
+    top: 253px;
+    left: 502px;
+}
+
+#nuvola_dani {
+	position: absolute;
+    z-index: 10;
+    top: 153px;
+    left: 426px;
+}
+
+#hover_italo {
+	position: absolute;
+    width: 100px;
+    height: 200px;
+    z-index: 20;
+    cursor: pointer;
+    top: 253px;
+    left: 108px;
+}
+
+#nuvola_italo {
+	position: absolute;
+    z-index: 10;
+    top: 142px;
+    left: 185px;
+}
+
+#hover_irene {
+	position: absolute;
+    width: 100px;
+    height: 200px;
+    z-index: 20;
+    cursor: pointer;
+    top: 267px;
+    left: 251px;
+}
+
+#nuvola_irene {
+	position: absolute;
+    top: 365px;
+    z-index: 10;
+    left: 310px;
+}
+
+#hover_livia {
+	position: absolute;
+    width: 100px;
+    height: 200px;
+    z-index: 20;
+    cursor: pointer;
+    top: 273px;
+    left: 383px;
+}
+
+#nuvola_livia {
+	position: absolute;
+    z-index: 10;
+    top: 385px;
+    left: 190px;
+}
+
+#hover_simona {
+	position: absolute;
+    width: 100px;
+    height: 200px;
+    z-index: 20;
+    cursor: pointer;
+    top: 269px;
+    left: 637px;
+}
+
+#nuvola_simona {
+	position: absolute;
+    top: 373px;
+    z-index: 10;
+    left: 573px;
+}
+
+.hiddenNuvola {
+	display: none;
+}
+
+.shownNuvola {
+	display: block;
+}

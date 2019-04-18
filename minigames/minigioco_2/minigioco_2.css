@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Steamwreck'; /*a name to be used later*/
+	src: url('./assets/UI/steamwreck.otf'); /*URL to font*/
+}
+
+.game_ui{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1000px;
+	height: 700px;
+	transform: translate(-50%,-50%);
+}
+
+#txtTimer{
+	position: absolute;
+	top: 141px;
+	left: 29px;
+	font-family: 'Steamwreck', 'sans-serif';
+	font-size: 40px;
+	color: #9B6C1F;
+	letter-spacing: -0.5px;
+}
+
+#imgVita {
+	position: absolute;
+	top: 258px;
+	left: 22px;
+}
+
+#txtVite {
+	position: absolute;
+	font-family: 'Steamwreck', 'sans-serif';
+	font-size: 22px;
+	top: 230px;
+	left: 43px;
+}
+
+#imgPunto {
+	position: absolute;
+	top: 306px;
+	left: 20px;
+}
+
+#txtPunti {
+	position: absolute;
+	font-family: 'Steamwreck', 'sans-serif';
+	font-size: 22px;
+	top: 279px;
+	left: 43px;
+}

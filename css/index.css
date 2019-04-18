@@ -1,0 +1,115 @@
+body {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+
+.main-logo{
+	position: absolute;
+    top: 15px;
+    left: 48%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 20;
+}
+
+.cartiglio{
+	position: absolute;
+    top: 309px;
+    left: 770px;
+    font-family: 'SegoeUI-Regular';
+    font-size: 12px;
+    font-weight: 200;
+    color: #FFDFC4;
+    text-align: left;
+    transform: scale(0.8);
+}
+
+.cartiglio p{
+	margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+    position: relative;
+    margin-top: 1px;
+}
+
+.btn-hover{
+    position: absolute;
+    left: 1px;
+}
+
+.btn-hover-hidden{
+    display: none;
+}
+
+.btn-hover-shown{
+    display: block;
+}
+
+.logo-hover{
+    position: absolute;
+    top: 30px;
+    left: 48%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 20;
+}
+
+.logo-hover-hidden{
+    display: none;
+}
+
+.logo-hover-shown{
+    display: block;
+}
+
+.btn-crediti{
+	position: absolute;
+	top: 420px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.btn-crediti > .text {
+	position: absolute;
+    top: 52%;
+    left: 64%;
+    transform: translate(-50%,-50%);
+}
+
+.btn-autori{
+	position: absolute;
+	top: 500px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.btn-autori > .text{
+	position: absolute;
+    top: 52%;
+    left: 64%;
+    transform: translate(-50%,-50%);
+}
+
+.btn-mappa{
+	position: absolute;
+	top: 580px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.btn-mappa > .text{
+	position: absolute;
+    top: 52%;
+    left: 64%;
+    transform: translate(-50%,-50%);
+}
+
+/****/

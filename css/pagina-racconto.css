@@ -1,0 +1,57 @@
+.racconto{
+	position: absolute;
+	width: 100%;
+    height: 100%;
+}
+
+.racconto .pergamena {
+	position: absolute;
+    top: 50px;
+    right: 45px;
+    z-index: 10;
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+.pergamenaHidden {
+    display: none;
+}
+
+.pergamenaShown {
+    display: block;
+}
+
+.racconto .testo{
+	position: absolute;
+    top: 140px;
+    right: 85px;
+    width: 300px;
+    text-align: left;
+    font-family: 'SegoeUI-Regular', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 20;
+    display: none;
+    transform: scale(0.8);
+}
+
+.racconto .testo span {
+	font-family: 'SegoeUI-Bold', sans-serif;
+	z-index: 9;
+}
+
+.racconto .img-render {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.racconto .btn-home {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 20;
+    cursor: pointer;
+    transform: scale(0.7);
+}

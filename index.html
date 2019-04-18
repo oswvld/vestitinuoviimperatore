@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>I Vestiti Nuovi dell'Imperatore</title>
+    <link href="./css/fonts.css" type="text/css" rel="stylesheet">
+    <link href="./css/main.css" type="text/css" rel="stylesheet">
+    <link href="./css/index.css" type="text/css" rel="stylesheet">
+    <link href="./css/credits.css" type="text/css" rel="stylesheet">
+    <link href="./css/authors.css" type="text/css" rel="stylesheet">
+    <link href="./css/map.css" type="text/css" rel="stylesheet">
+    <link href="./css/pagina-racconto.css" type="text/css" rel="stylesheet">
+    <link href="./css/pagina-gioco.css" type="text/css" rel="stylesheet">
+    <link href="./minigames/minigioco_2/minigioco_2.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- margin e bordi steampunk -->
+    <div class="area-utile">
+
+      <!-- contenuto dinamico -->
+      <div class="content">
+        <!-- copertina -->
+        <div id="index" class="hiddenPage">
+          <div class="main-logo">
+            <img class="normal" src="./img/main_logo_v2.png">
+            <img class="colored" src="./img/logo-hover.png" style="display: none;">
+          </div>
+          <img src="./img/renders/copertina.png" style="position: absolute; width: 100%; border-radius: 30px;">
+
+          <div class="cartiglio">
+            <p>Politecnico di Milano - Scuola del Design</p>
+            <p>CdL in Design della Comunicazione</p>
+            <strong>LAB. DI COMPUTER GRAFICA - C1</strong>
+            <p>Proff. M. Bertolo, F. Bruschi, L. Micoli, V. Rana</p>
+            <p>A.A 2017/18</p>
+            <p style="margin-top: 100px;">Yi <strong>CAO</strong></p>
+            <p>Daniel <strong>DEMONTEVERDE</strong></p>
+            <p>Alena <strong>LYSKOVA</strong></p>
+            <p>Livia <strong>STEVENIN</strong></p>
+            <p>Chuzhe <strong>WANG</strong></p>
+            <p>Irene <strong>ZANARDI</strong></p>
+          </div>
+
+
+          <div class="btn-crediti">
+            <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/crediti-small.png">
+          </div>
+          <div class="btn-autori">
+            <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/autori-small.png">
+          </div>
+          <div class="btn-mappa">
+            <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+        </div> <!-- end copertina -->
+
+        <!-- pag crediti -->
+        <div id="pg-credits" class="hiddenPage">
+          <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+          <div class="area-utile">
+            <img class="section-title" src="./img/crediti-big.png">
+          </div>
+          <div style="position: absolute; top: 100px; left: 50%; transform: translate(-50%,0%); width: 750px; height: 500px; overflow: scroll; z-index: 9999;">
+            <p class="headline">Fiaba originale scritta da Hans Christian Andersen nel 1837, con il titolo danese <span>Keiserens Nye Klæder</span>.</p>
+            <div class="container-columns">
+              <div class="col" style="z-index: 30;">
+                <p>
+                  <span class="head-role">Organizzazione del lavoro</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+                <p>
+                  <span class="head-role">Schizzi dei personaggio</span>
+                  <br/>
+                  <span class="role">Chuzhe Wang</span>
+                </p>
+                <p>
+                  <span class="head-role">Schizzi degli oggetti</span>
+                  <br/>
+                  <span class="role">Chuzhe Wang</span>
+                </p>
+                <p>
+                  <span class="head-role">Schizzi degli ambienti</span>
+                  <br/>
+                  <span class="role">Alena Lyskova</span>
+                </p>
+                <p>
+                  <span class="head-role">Schizzi delle inquadrature</span>
+                  <br/>
+                  <span class="role">Alena Lyskova</span>
+                </p>
+                <p>
+                  <span class="head-role">Omino neutro</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Modellazione degli ambienti</span>
+                  <br/>
+                  <span class="role">Livia Stevenin, Alena Lyskova</span>
+                </p>
+                <p>
+                  <span class="head-role">Modellazione degli oggetti</span>
+                  <br/>
+                  <span class="role">Yi Cao, Livia Stevenin</span>
+                </p>
+                <p>
+                  <span class="head-role">Modellazione dei personaggi</span>
+                  <br/>
+                  <span class="role">Yi Cao, Livia Stevenin</span>
+                </p>
+              </div>
+              <div class="col">
+                <p>
+                  <span class="head-role">Texture</span>
+                  <br/>
+                  <span class="role">Chuzhe Wang, Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Gestione shader</span>
+                  <br/>
+                  <span class="role">Yi Cao, Alena Lyskova, Livia Stevenin</span>
+                </p>
+                <p>
+                  <span class="head-role">Gestione luci/camere</span>
+                  <br/>
+                  <span class="role">Livia Stevenin</span>
+                </p>
+                <p>
+                  <span class="head-role">Rendering</span>
+                  <br/>
+                  <span class="role">Collettivo</span>
+                </p>
+                <p>
+                  <span class="head-role">Postproduzione render</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Illustrazioni</span>
+                  <br/>
+                  <span class="role">Chuzhe Wang</span>
+                </p>
+                <p>
+                  <span class="head-role">Grafica interfaccia (Illustrator)</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Grafica interfaccia (HTML, CSS)</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+                <p>
+                  <span class="head-role">Grafica minigioco ministri/imperatore</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+              </div>
+              <div class="col" style="top: -110px;">
+                <p>
+                  <span class="head-role">Grafica minigioco truffatori</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde, Alena Lyskova</span>
+                </p>
+                <p>
+                  <span class="head-role">Sviluppo minigioco dei ministri</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Sviluppo minigioco dei truffatori</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+                <p>
+                  <span class="head-role">Trattamento testi</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Hyperboard</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+                <p>
+                  <span class="head-role">Assemblaggio del lavoro</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+              </div>
+              <br/><br/><br/>
+              <div class="col" style="width: 100%;">
+                <p>
+                  <span class="head-role">Segoe UI (font)</span>
+                  <br/>
+                  <span class="role">Monotype</span>
+                </p>
+                <p>
+                  <span class="head-role">Steamwreck (font)</span>
+                  <br/>
+                  <span class="role">Pixel Sagas</span>
+                </p>
+                <p>
+                  <span class="head-role">Framework minigiochi</span>
+                  <br/>
+                  <span class="role">Phaser v2.9.2</span>
+                </p>
+                <p>
+                  <span class="head-role">Wood (texture)</span>
+                  <br/>
+                  <a href="https://www.sketchuptextureclub.com/textures/architecture/wood" class="role">https://www.sketchuptextureclub.com/textures/architecture/wood</a>
+                </p>
+                <p>
+                  <span class="head-role">Red Curtain (texture)</span>
+                  <br/>
+                  <a href="https://onetwosom.deviantart.com/art/Red-Curtain-Texture-274685001" class="role">https://onetwosom.deviantart.com/art/Red-Curtain-Texture-274685001</a>
+                </p>
+                <p>
+                  <span class="head-role">House wall (texture)</span>
+                  <br/>
+                  <a href="http://www.ineoteric.com/house-wall-texture/" class="role">http://www.ineoteric.com/house-wall-texture/</a>
+                </p>
+                <p>
+                  <span class="head-role">Wall (texture)</span>
+                  <br/>
+                  <a href="http://buybrinkhomes.com/wall-texture-designs/gorgeous-wall-texture-designs-for-your-walls-layout-interior-textures-cool-nerolac/" class="role">http://buybrinkhomes.com/wall-texture-designs/gorgeous-wall-texture-designs-for-your-walls-layout-interior-textures-cool-nerolac/</a>
+                </p>
+                <p>
+                  <span class="head-role">Hair (texture)</span>
+                  <br/>
+                  <a href="http://tutorialfreakz.com/free-hair-textures/" class="role">http://tutorialfreakz.com/free-hair-textures/</a>
+                </p>
+                <p>
+                  <span class="head-role">Fur (texture)</span>
+                  <br/>
+                  <a href="http://www.psd-dude.com/tutorials/resources/free-fur-textures-for-photoshop.aspx" class="role">http://www.psd-dude.com/tutorials/resources/free-fur-textures-for-photoshop.aspx</a>
+                </p>
+                <p>
+                  <span class="head-role">Libri (texture)</span>
+                  <br/>
+                  <a href="http://www.wfinternationalstringcompetition.com/texture-png-leather-books-book-e4a4f2e3f30b9da3.html" class="role">http://www.wfinternationalstringcompetition.com/texture-png-leather-books-book-e4a4f2e3f30b9da3.html</a>
+                </p>
+                <p>
+                  <span class="head-role">Scatolone (texture)</span>
+                  <br/>
+                  <a href="https://dactilardesign.deviantart.com/art/Crate-generator-342135330" class="role">https://dactilardesign.deviantart.com/art/Crate-generator-342135330</a>
+                </p>
+                <p>
+                  <span class="head-role">Concrete (texture)</span>
+                  <br/>
+                  <a href="https://www.sketchuptextureclub.com/textures/architecture/roads/paving-streets/cobblestone/street-paving-cobblestone-texture-seamless-07423" class="role">https://www.sketchuptextureclub.com/textures/architecture/roads/paving-streets/cobblestone/street-paving-cobblestone-texture-seamless-07423</a>
+                </p>
+                <p>
+                  <span class="head-role">Generatore di pavimenti, Vray - Chaos Group</span>
+                  <br/>
+                  <a href="https://www.cg-source.com/floorgenerator.php" class="role">https://www.cg-source.com/floorgenerator.php</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="area-utile">
+            <div>
+              <p class="headline">Fiaba originale scritta da Hans Christian Andersen nel 1837, con il titolo danese <span>Keiserens Nye Klæder</span>.</p>
+            <div class="container-columns">
+              <div class="col" style="z-index: 30;">
+                <p>
+                  <span class="head-role">Organizzazione del lavoro</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+                <p>
+                  <span class="head-role">Schizzi dei personaggio</span>
+                  <br/>
+                  <span class="role">Chuzhe Wang</span>
+                </p>
+                <p>
+                  <span class="head-role">Schizzi degli oggetti</span>
+                  <br/>
+                  <span class="role">Chuzhe Wang</span>
+                </p>
+                <p>
+                  <span class="head-role">Schizzi degli ambienti</span>
+                  <br/>
+                  <span class="role">Alena Lyskova</span>
+                </p>
+                <p>
+                  <span class="head-role">Schizzi delle inquadrature</span>
+                  <br/>
+                  <span class="role">Alena Lyskova</span>
+                </p>
+                <p>
+                  <span class="head-role">Omino neutro</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Modellazione degli ambienti</span>
+                  <br/>
+                  <span class="role">Livia Stevenin, Alena Lyskova</span>
+                </p>
+                <p>
+                  <span class="head-role">Modellazione degli oggetti</span>
+                  <br/>
+                  <span class="role">Yi Cao, Livia Stevenin</span>
+                </p>
+                <p>
+                  <span class="head-role">Modellazione dei personaggi</span>
+                  <br/>
+                  <span class="role">Yi Cao, Livia Stevenin</span>
+                </p>
+              </div>
+              <div class="col" style="top: 15px;">
+                <p>
+                  <span class="head-role">Texture</span>
+                  <br/>
+                  <span class="role">Chuzhe Wang, Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Gestione shader</span>
+                  <br/>
+                  <span class="role">Yi Cao, Alena Lyskova, Livia Stevenin</span>
+                </p>
+                <p>
+                  <span class="head-role">Gestione luci/camere</span>
+                  <br/>
+                  <span class="role">Livia Stevenin</span>
+                </p>
+                <p>
+                  <span class="head-role">Rendering</span>
+                  <br/>
+                  <span class="role">Collettivo</span>
+                </p>
+                <p>
+                  <span class="head-role">Postproduzione render</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Illustrazioni</span>
+                  <br/>
+                  <span class="role">Chuzhe Wang</span>
+                </p>
+                <p>
+                  <span class="head-role">Grafica interfaccia (Illustrator)</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Grafica interfaccia (HTML, CSS)</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+                <p>
+                  <span class="head-role">Grafica minigioco ministri/imperatore</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+              </div>
+              <div class="col" style="top: -41px;">
+                <p>
+                  <span class="head-role">Grafica minigioco truffatori</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde, Alena Lyskova</span>
+                </p>
+                <p>
+                  <span class="head-role">Sviluppo minigioco dei ministri</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Sviluppo minigioco dei truffatori</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+                <p>
+                  <span class="head-role">Trattamento testi</span>
+                  <br/>
+                  <span class="role">Irene Zanardi</span>
+                </p>
+                <p>
+                  <span class="head-role">Hyperboard</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+                <p>
+                  <span class="head-role">Assemblaggio del lavoro</span>
+                  <br/>
+                  <span class="role">Daniel Demonteverde</span>
+                </p>
+                <p>
+                  <span class="head-role">Steamwreck (font)</span>
+                  <br/>
+                  <span class="role">Pixel Sagas</span>
+                </p>
+                <p>
+                  <span class="head-role">Framework minigiochi</span>
+                  <br/>
+                  <span class="role">Phaser v2.9.2</span>
+                </p>
+              </div>
+            </div>
+            <img class="section-title" src="./img/crediti-big.png">
+            </div>
+          </div> -->
+        </div>
+        <!-- end crediti -->
+
+        <!-- pag autori -->
+        <div id="pg-authors" class="hiddenPage">
+          <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+          <img class="img-authors" src="./img/img-autori.png">
+          <a href="mailto:alyskovaa@gmail.com" id="hover_alena"></a>
+          <img id="nuvola_alena" class="hiddenNuvola" src="./img/authors-page/nuvola_alena.png">
+          <a href="mailto:daniel.demonteverde@gmail.com" id="hover_dani"></a>
+          <img id="nuvola_dani" class="hiddenNuvola" src="./img/authors-page/nuvola_dani.png">
+          <a href="mailto:cao2go@gmail.com" id="hover_italo"></a>
+          <img id="nuvola_italo" class="hiddenNuvola" src="./img/authors-page/nuvola_italo.png">
+          <a href="mailto:irene.zanardi@gmail.com" id="hover_irene"></a>
+          <img id="nuvola_irene" class="hiddenNuvola" src="./img/authors-page/nuvola_irene.png">
+          <a href="mailto:livia.stevenin@gmail.com" id="hover_livia"></a>
+          <img id="nuvola_livia" class="hiddenNuvola" src="./img/authors-page/nuvola_livia.png">
+          <a href="mailto:simonawang9636@gmail.com" id="hover_simona"></a>
+          <img id="nuvola_simona" class="hiddenNuvola" src="./img/authors-page/nuvola_simona.png">
+          <img class="section-title" src="./img/autori-big.png">
+        </div>
+        <!-- end autori -->
+
+        <!-- pag mappa -->
+        <div id="pg-map" class="hiddenPage">
+          <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+          <div class="area-utile">
+          <img class="section-title" src="./img/mappa-big.png">
+          </div>
+          <!-- elements mappa -->
+          <div class="elements-mappa">
+
+            <div class="pannelli">
+              <div id="pnl-copertina" class="map-panel">
+                <img src="./img/map-page/pannelli/copertina_v2.png">
+            </div>
+            <div id="pnl-000" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/010.png">
+              <img src="./img/map-page/pannelli/000_v2.png">
+            </div>
+            <img id="freccia-000-010" src="./img/map-page/frecce/000-010.png">
+            <div id="pnl-010" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/011.png">
+              <img src="./img/map-page/pannelli/010_v2.png">
+            </div>
+            <img id="freccia-010-020" src="./img/map-page/frecce/010-020.png">
+            <div id="pnl-020" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/020.png">
+              <img src="./img/map-page/pannelli/020_v2.png">
+            </div>
+            <img id="freccia-020-030" src="./img/map-page/frecce/020-030.png">
+            <div id="pnl-030" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/030.png" style="left: 10px;">
+              <img src="./img/map-page/pannelli/030_v2.png">
+            </div>
+            <img id="freccia-030-040" src="./img/map-page/frecce/030-040.png">
+            <img id="freccia-030-041" src="./img/map-page/frecce/030-041.png">
+            <div id="pnl-040" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/041.png">
+              <img src="./img/map-page/pannelli/040_v2.png">
+            </div>
+            <div id="pnl-041" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/040.png">
+              <img src="./img/map-page/pannelli/041_v2.png">
+            </div>
+            <img id="freccia-041-050" src="./img/map-page/frecce/041-050.png">
+            <div id="pnl-050" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/050.png" style="left: 12px;">
+              <img src="./img/map-page/pannelli/050_v2.png">
+            </div>
+            <img id="freccia-050-051" src="./img/map-page/frecce/050-051.png">
+            <img id="freccia-050-052" src="./img/map-page/frecce/050-052.png">
+            <img id="freccia-050-060" src="./img/map-page/frecce/050-060.png">
+            <img id="freccia-040-050" src="./img/map-page/frecce/040-050.png">
+            <div id="pnl-051" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/051.png">
+              <img src="./img/map-page/pannelli/051_v2.png">
+            </div>
+            <img id="freccia-051-060" src="./img/map-page/frecce/051-060.png">
+            <div id="pnl-052" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/052.png">
+              <img src="./img/map-page/pannelli/052_v2.png">
+            </div>
+            <img id="freccia-052-070" src="./img/map-page/frecce/052-070.png">
+            <div id="pnl-060" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/060.png" style="left: 12px;">
+              <img src="./img/map-page/pannelli/060_v2.png">
+            </div>
+            <img id="freccia-060-080" src="./img/map-page/frecce/060-080.png">
+            <img id="freccia-060-090" src="./img/map-page/frecce/060-090.png">
+            <div id="pnl-080" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/080.png">
+              <img src="./img/map-page/pannelli/080_v2.png">
+            </div>
+            <img id="freccia-080-100" src="./img/map-page/frecce/080-100.png">
+            <div id="pnl-100" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/100.png" style="height: ">
+              <img src="./img/map-page/pannelli/100_v2.png">
+            </div>
+            <img id="freccia-100-FA2" src="./img/map-page/frecce/100-FA2.png">
+            <div id="pnl-FA2" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/FA2.png">
+              <img src="./img/map-page/pannelli/FA2_v2.png">
+            </div>
+            <div id="pnl-110" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/110.png" style="left: 9px;">
+              <img src="./img/map-page/pannelli/110_v2.png">
+            </div>
+            <img id="freccia-110-120" src="./img/map-page/frecce/110-120.png">
+            <img id="freccia-110-121" src="./img/map-page/frecce/110-121.png">
+            <div id="pnl-090" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/090.png">
+              <img src="./img/map-page/pannelli/090_v2.png">
+            </div>
+            <img id="freccia-090-110" src="./img/map-page/frecce/090-110.png">
+            <div id="pnl-070" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/070.png">
+              <img src="./img/map-page/pannelli/070_v2.png">
+            </div>
+            <img id="freccia-070-110" src="./img/map-page/frecce/070-110.png">
+            <div id="pnl-052" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/052.png">
+              <img src="./img/map-page/pannelli/052_v2.png">
+            </div>
+            <div id="pnl-121" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/121.png">
+              <img src="./img/map-page/pannelli/121_v2.png">
+            </div>
+            <img id="freccia-121-131" src="./img/map-page/frecce/121-131.png">
+            <div id="pnl-131" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/131.png">
+              <img src="./img/map-page/pannelli/131_v2.png">
+            </div>
+            <img id="freccia-131-FA1" src="./img/map-page/frecce/131-FA1.png">
+            <div id="pnl-120" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/120.png">
+              <img src="./img/map-page/pannelli/120_v2.png">
+            </div>
+            <img id="freccia-120-130" src="./img/map-page/frecce/120-130.png">
+            <div id="pnl-130" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/130.png">
+              <img src="./img/map-page/pannelli/130_v2.png">
+            </div>
+            <img id="freccia-130-140" src="./img/map-page/frecce/130-140.png">
+            <div id="pnl-140" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/140.png">
+              <img src="./img/map-page/pannelli/140_v2.png">
+            </div>
+            <img id="freccia-140-FO" src="./img/map-page/frecce/140-FO.png">
+            <div id="pnl-FO" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/FO.png">
+              <img src="./img/map-page/pannelli/FO_v2.png">
+            </div>
+            <div id="pnl-FA1" class="map-panel">
+              <img class="thumbnail thumbnailHidden" src="./img/map-page/mini-renders/FA1.png">
+              <img src="./img/map-page/pannelli/FA1_v2.png">
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- end mappa -->
+
+        <!-- page 000 -->
+        <div id="page000" class="hiddenPage racconto">
+          <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+          <p class="testo">
+            Molti anni fa viveva un <span class="strong">imperatore</span> che amava tanto avere sempre <span class="strong">bellissimi vestiti nuovi</span> da usare tutti i suoi soldi per vestirsi elegantemente. Non si curava dei suoi soldati né di andare a teatro o di passeggiare nel bosco, se non per sfoggiare i vestiti nuovi.<br/><br/>
+            Una volta nella grande città <span class="strong">arrivarono due impostori</span>: si fecero passare per tessitori e sostennero di <span class="strong">saper tessere la stoffa più bella</span> che mai si potesse immaginare.<br/><br/>
+            Non solo i colori e il disegno erano straordinariamente belli, ma i vestiti di quella stoffa diventavano <span class="strong">invisibili</span> agli uomini che <span class="strong">non erano all'altezza della loro carica</span> e a quelli <span class="strong">molto stupidi</span>.
+          </p>
+          <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+          <img class="img-render" src="./img/renders/post/010.png">
+          <div class="btn-mappa">
+            <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+        </div>
+      <!-- -->
+
+      <!-- page 010 -->
+      <div id="page010" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          L'imperatore non poteva farsi scappare un'<span class="strong">occasione</span> simile. Con quei vestiti avrebbe potuto scoprire chi nel regno non era all'altezza dell'incarico e riconoscere gli stupidi dagli intelligenti.<br/><br/>
+          Diede così ai due truffatori <span class="strong">molti soldi</span>, affinché potessero <span class="strong">cominciare a lavorare</span>.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/011.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+      <!-- -->
+
+      <div id="page020" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          "Mi piacerebbe sapere <span class="strong">come proseguono i lavori</span> per la stoffa" pensò l'imperatore, ma in verità si sentiva un po' <span class="strong">agitato</span>. Naturalmente non temeva per sé stesso. Avrebbe di certo potuto vedere la stoffa. Tuttavia preferì <span class="strong">mandare prima un altro</span> a vedere come le cose proseguivano.<br/><br/>
+          "Manderò il mio vecchio bravo <span class="strong">ministro dai tessitori</span>" pensò l'imperatore "lui potrà certo vedere meglio degli altri come sta venendo la stoffa, dato che <span class="strong">ha buon senso</span> e non c'è nessuno migliore di lui nel <span class="strong">fare il suo lavoro</span>."
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/020.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page030" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          Il vecchio ministro entrò nel salone dove i due truffatori stavano lavorando con i due telai vuoti. "Dio mi protegga!" pensò, e spalancò gli occhi "<span class="strong">non riesco a vedere niente!</span>".<br/><br/>
+          Entrambi i truffatori lo pregarono di avvicinarsi di più e chiesero se i colori e il disegno non erano belli. Intanto indicavano i telai vuoti e il povero ministro continuò a sgranare gli occhi, ma non potè dir nulla, perché non c'era nulla.<br/><br/>
+          Se avesse deciso di <span class="strong">dire la verità</span>, avrebbero pensato fosse stupido e lo avrebbero allontanato. Ma avrebbe potuto <span class="strong">mentire</span> al suo Signore, dopo tutti quegli anni di fedele servizio?
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/030.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page040" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          Tornato dall'imperatore, il <span class="strong">vecchio ministro ammise</span> di non poter vedere la stoffa e provò a far capire all'imperatore che i due tessitori erano solo degli imbroglioni.<br/><br/>
+          L'imperatore <span class="strong">si arrabbiò</span>, ma preferì essere sicuro prima di mandare via il suo fedele primo ministro.<br/><br/>
+          Così <span class="strong">inviò poco dopo un altro</span> onesto funzionario per vedere come proseguivano i lavori, e quanto mancava prima che il tessuto fosse pronto.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/041.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page041" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          Tornato dall'imperatore, il <span class="strong">vecchio ministro lodò il lavoro</span> dei tessitori: «È splendida! Bellissima! Che disegni e che colori! Sì, sì, mi piacciono moltissimo!», e cominciò a nominare i vari colori e lo splendido disegno, ricordandosi le parole dei tessitori.<br/><br/>
+          L'imperatore <span class="strong">ne fu felice</span>, ma preferì esserne sicuro. Così <span class="strong">inviò poco dopo un altro</span> onesto funzionario per vedere come proseguivano i lavori, e quanto mancava prima che il tessuto fosse pronto.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/040.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page050" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          A lui successe quello che era capitato al ministro; guardò con attenzione, ma non c'era nulla da vedere se non i telai vuoti, e difatti non vide nulla.
+          «Non è una bella stoffa?» chiesero i due truffatori, spiegando e mostrando il bel disegno che non c'era affatto.<br/><br/>
+          "<span class="strong">Stupido non sono</span>" pensò il funzionario "è dunque la carica che ho che non è adatta a me? <span class="strong">Mi sembra strano!</span>"<br/><br/>
+          Continuando a cercare con gli occhi la stoffa, <span class="strong">rimuginò</span> sul da farsi, se fosse meglio mentire o ammettere di non vedere nulla.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/050.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page051" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          "<span class="strong">Nessuno deve accorgersi</span> che non vedo niente!", pensò il funzionario.<br/><br/>
+          Andò dall'imperatore e riferì quanto fosse <span class="strong">incredibile la stoffa.</span><br/><br/>
+          A seguito di queste parole, l'imperatore dovette <span class="strong">mandare via il primo ministro</span> che evidentemente non era all'altezza della propria carica o era molto stupido.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/051.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page052" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          "<span class="strong">Non posso mentire</span> al mio Signore, ho fatto voto di dire sempre la <span class="strong">verità!</span>", pensò il funzionario.<br/><br/>
+          Andò dall'imperatore e riferì di non poter vedere nulla, perché <span class="strong">nulla era sui telai</span>.<br/><br/>
+          A seguito di queste parole, l'imperatore <span class="strong">si convinse</span> che i due tessitori stessero cercando di <span class="strong">ingannarlo</span>.<br/><br/>
+          "Non è possibile che i due funzionari migliori del regno non riescano a vedere la stoffa. Quegli imbroglioni vedranno la mia <span class="strong">ira</span>."
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/052.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page060" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+          <!--
+          tra cui anche i due funzionari che già erano stati a vederla <i>[tra cui il funzionario che era riuscito a vederla]</i>
+          -->
+        <p class="testo" style="top: 110px;">
+          Le parole del funzionario convinsero l'imperatore che fosse <span class="strong">arrivato il momento di andare</span> a vedere la stoffa personalmente.<br/><br/>
+          Con un gruppo di uomini scelti, <span class="interchange"></span>, <span class="strong">si recò dai furbi truffatori</span>.<br/><br/>
+          «Non è magnifique?»<br/><br/>
+          "Come sarebbe!" pensò l'imperatore. "Io <span class="strong">non vedo nulla</span>! È terribile! sono forse stupido? o non sono degno di essere imperatore?"<br/><br/>
+          <span class="strong">Che fare</span>, si chiedeva.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/060.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page070" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo" style="top: 105px;">
+          Con un gruppo di uomini scelti, tra cui anche i due funzionari che già erano stati a vederla, <span class="strong">si recò dai furbi truffatori</span>.<br/><br/>
+          «Oh, è bellissima!» esclamò «<span class="strong">ha la mia piena approvazione!</span>» e ammirava, facendo finta di essere cascato nella trappola.<br/><br/>
+          Tutto il suo seguito guardò con attenzione; tutti dissero ugualmente all'imperatore: «È bellissima» e gli consigliarono di farsi fare un <span class="strong">vestito e di indossarlo al corteo</span> che doveva avvenire tra breve.<br/><br/>
+          «Oh, sarebbe uno spreco farne solo un vestito!», esclamò l'imperatore «<span class="strong">Ne chiedo due</span>! Così potrò indossare questa meravigliosa stoffa più spesso.»
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/070.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page080" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          «<span class="strong">Non c'è nulla</span> sui telai!» esclamò «State cercando di imbrogliarmi!» e si guardava intorno sconcertato, cercando di capire se fosse l'unico a non vederla.<br/><br/>
+          Tutto il seguito fissò incerto l'imperatore.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/080.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page090" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          «Oh, è bellissima!» esclamò «<span class="strong">ha la mia piena approvazione!</span>» e ammirava, osservandolo soddisfatto, il telaio vuoto; <span class="strong">non voleva dire che non ci vedeva niente</span>.<br/><br/>
+          Tutto il suo seguito guardò con attenzione, e non scoprì nulla di più; tutti dissero ugualmente all'imperatore: «È bellissima» e gli consigliarono di farsi fare un <span class="strong">vestito e di indossarlo al corteo</span> che doveva avvenire tra breve.<br/><br/>
+          L'imperatore consegnò ai truffatori la <span class="strong">Croce di Cavaliere</span> da appendere all'occhiello, e il titolo di <span class="strong">Nobili Tessitori</span>.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/090.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page100" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          <span class="strong">Il principe colse l'occasione</span>: «Ma come papà, non vedi nulla? Non sarai mica inadatto alla carica?»<br/><br/>
+          Indicando l'imperatore esterrefatto, <span class="strong">gridò alle guardie</span>: «Non solo non vede la stoffa, ma ha anche cercato di dare la colpa ai tessitori, pur di continuare a comandare! Per il bene del regno, <span class="strong">arrestatelo</span>!»
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/100.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page110" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          Tutta la notte che precedette il corteo i truffatori <span class="strong">restarono alzati</span> con sedici candele accese.<br/><br/>
+          Così la gente poteva vedere che avevano da fare per preparare il nuovo vestito dell'imperatore.<br/><br/>
+          Finsero di togliere la stoffa dal telaio, tagliarono l'aria con grosse forbici e cucirono con ago senza filo, infine annunciarono: «<span class="strong">Ora il vestito è pronto</span>.»
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/110.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page120" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          Giunse l'imperatore in <span class="strong">casa dei tessitori</span> che sollevarono un braccio come se tenessero qualcosa e dissero: «Questi sono i calzoni; e poi la giacca - e infine il mantello!» e così via.<br/><br/>
+          «Vuole Sua Maestà Imperiale degnarsi ora di spogliarsi?» dissero i truffatori «così <span class="strong">le metteremo i nuovi abiti</span> proprio qui davanti allo specchio.»<br/><br/>
+          «In realtà, ci ho pensato e credo dobbiate indossare voi il vostro lavoro» disse ai truffatori «così potrete mostrate a tutta la città il vostro talento!»<br/><br/>
+          Le guardie fecero un passo avanti minacciose, e, loro malgrado, i truffatori si svestirono.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/120.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page121" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          <span class="strong">I tessitori giunsero nelle stanze</span> dell'imperatore. Sollevarono un braccio come se tenessero qualcosa e dissero: «Questi sono i calzoni; e poi la giacca - e infine il mantello!» e così via.<br/><br/>
+          «Vuole Sua Maestà Imperiale degnarsi ora di spogliarsi?» dissero i truffatori «così <span class="strong">le metteremo i nuovi abiti</span> proprio qui davanti allo specchio.»<br/><br/>
+          <span class="strong">L'imperatore si svestì</span> e i truffatori fìnsero di porgergli le varie parti del nuovo vestito, che stavano terminando di cucire.<br/><br/>
+          «Come le sta bene! <span class="strong">come le dona</span>!» dissero tutti. «Che disegno! che colori! È un abito preziosissimo!»
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/121.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page130" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          Arrivò il baldacchino e l'imperatore <span class="strong">fece salire i due truffatori</span>.<br/><br/>
+          La gente che era per strada o alla finestra guardava i due tessitori nudi in strada. Qualcuno, meno timido, elogiò i vestiti meravigliosi per paura di sembrare stupido.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/130.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page131" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          Arrivò il baldacchino e l'imperatore <span class="strong">aprì il corteo</span>.<br/><br/>
+          La gente che era per strada o alla finestra diceva: «Che meraviglia i nuovi vestiti dell'imperatore! Che splendido strascico porta! Come gli stanno bene!». <span class="strong">Nessuno voleva far capire che non vedeva niente</span>, perché altrimenti avrebbe dimostrato di essere stupido o di non essere all'altezza del suo incarico.<br/><br/>
+          Nessuno dei vestiti dell'imperatore aveva mai avuto un <span class="strong">tale successo</span>.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/131.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="page140" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          Tuttavia ad un certo punto, un <span class="strong">bambino</span> dalla folla esclamò «Ma <span class="strong">non ha niente addosso</span>!»<br/><br/>
+          «Signore sentite la voce dell'innocenza!» replicò il padre, e ognuno sussurrava all'altro quel che il bambino aveva detto.<br/><br/>
+          «Non ha niente addosso! C'è un bambino che dice che non ha niente addosso!»<br/><br/>
+          «Non ha proprio niente addosso!» gridava alla fine tutta la gente.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/140.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="pageFO" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          L'imperatore rabbrividì perché sapeva che avevano ragione, ma pensò: "Ormai devo restare fino alla fine."<br/><br/>
+          E così si raddrizzò ancora più fiero e i ciambellani lo seguirono reggendo lo strascico che non c'era.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/FO.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="pageFA1" class="hiddenPage racconto">
+        <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          «Signori, <span class="strong">non hanno nulla addosso</span>!» gridò l'imperatore che si mise a <span class="strong">ridere compiaciuto</span>.<br/><br/>
+          «Non ha proprio niente addosso!» gridava alla fine tutta la gente, <span class="strong">convintasi dell'inganno</span>.<br/><br/>
+          Tra risate fragorose, i due imbroglioni finirono <span class="strong">l'umiliante corteo</span>.
+        </p>
+        <img class="pergamena pergamenaHidden" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/FA1.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <div id="pageFA2" class="hiddenPage racconto">
+       <div class="btn-home">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <p class="testo">
+          Il principe <span class="strong">prese il posto del padre</span> che scappò dal regno.
+        </p>
+        <img class="pergamena" src="./img/foglio-carta.png">
+        <img class="img-render" src="./img/renders/post/FA2.png">
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+      <!-- minigioco_1a -->
+      <div id="minigioco_1a" class="hiddenPage gioco">
+        <div class="btn-home" style="position: absolute; top: 25px; left: 870px;">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <div class="btn-retry">
+          <img src="img/btn-retry.png">
+        </div>
+        <div id="minigioco_1a_container"></div>
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+      <!-- minigioco_1b -->
+      <div id="minigioco_1b" class="hiddenPage gioco">
+        <div class="btn-home" style="position: absolute; top: 25px; left: 870px;">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <div class="btn-retry">
+          <img src="img/btn-retry.png">
+        </div>
+        <div id="minigioco_1b_container"></div>
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+      <!-- minigioco_1c -->
+      <div id="minigioco_1c" class="hiddenPage gioco">
+        <div class="btn-home" style="position: absolute; top: 25px; left: 870px;">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <div class="btn-retry">
+          <img src="img/btn-retry.png">
+        </div>
+        <div id="minigioco_1c_container"></div>
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+      <!-- minigioco_2 -->
+      <div id="minigioco_2" class="hiddenPage gioco">
+        <div class="btn-home" style="position: absolute; top: 25px; left: 870px;">
+            <img class="colored" src="./img/btn-castle-hover.png" style="display: none;">
+            <img class="normal" src="./img/btn-castle.png">
+          </div>
+        <div class="btn-retry" style="top: 115px; right: 50px;">
+          <img src="img/btn-retry.png">
+        </div>
+        <div id="minigioco_2_container"></div>
+        <div class="game_ui" style="display: none;">
+          <p id="txtTimer"></p>
+          <img id="imgVita" src="./minigames/minigioco_2/assets/UI/heart_vita.png"><p id="txtVite">x<span></span></p>
+          <img id="imgPunto" src="./minigames/minigioco_2/assets/UI/moneta_punto.png"><p id="txtPunti">x<span></span></p>
+        </div>
+        <div class="btn-mappa">
+          <img class="btn-hover btn-hover-hidden" src="./img/btn-home-hover.png">
+            <img src="./img/btn-home-v2.png">
+            <img class="text" src="./img/mappa-small.png">
+          </div>
+      </div>
+
+
+
+      </div>
+      <img class="outer-rim" src="./img/outer_rim.png" style="display: none; margin-top: 1px;">
+      <img class="shading" src="./img/shading.png">
+      <img class="rim-details" src="./img/rim-details.png">
+    </div>
+
+    <!-- debug buttons -->
+    <!-- <div id="debugButtons" style="display: none;">
+      <button id="right" type="button">Go Right</button>
+      <button id="verita" type="button">Verita</button>
+      <button id="bugia" type="button">Bugia</button>
+    </div> -->
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/phaser.min.js"></script>
+    <script src="./js/pages.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/credits.js"></script>
+    <script src="./js/authors.js"></script>
+    <script src="./js/pagina-racconto.js"></script>
+    <script src="./js/pagina-minigioco-1a.js"></script>
+    <script src="./js/pagina-minigioco-1b.js"></script>
+    <script src="./js/pagina-minigioco-1c.js"></script>
+    <script src="./js/pagina-minigioco-2.js"></script>
+    <script src="./minigames/minigioco_1a/minigioco.js"></script>
+    <script src="./minigames/minigioco_1b/minigioco.js"></script>
+    <script src="./minigames/minigioco_1c/minigioco.js"></script>
+    <script src="./minigames/minigioco_2/minigioco_2.js"></script>
+    <!-- <script src="./minigioco_parole/ministro/fallingWords_ministro.js"></script>
+    <script src="./minigioco_monete/coinsHideout.js"></script> -->
+  </body>
+</html>

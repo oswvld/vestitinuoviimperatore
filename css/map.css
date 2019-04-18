@@ -1,0 +1,374 @@
+#pg-map .elements-mappa{
+	position: absolute;
+	top: 10px;
+}
+
+#pg-map .area-utile{
+	background-color: #4F372F;
+	border-radius: 30px;
+}
+
+#pg-map .section-title {
+	position: absolute;
+	bottom: 30px;
+	right: 50px;
+	z-index: 10;
+}
+
+#pg-map .btn-home {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 20;
+	cursor: pointer;
+    transform: scale(0.7);
+}
+
+#pg-map .map-panel {
+	cursor: pointer;
+	z-index: 20;
+}
+
+#pg-map .thumbnail{
+	position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 120px;
+    height: 83px;
+}
+
+#pg-map .thumbnailHidden {
+	display: none;
+}
+
+#pg-map .thumbnailShown {
+	display: block;
+}
+
+
+#pg-map #pnl-copertina {
+	position: absolute;
+	top: calc(10px + 45px);
+	left: calc(150px + 35px);
+}
+
+#pg-map #pnl-000 {
+	position: absolute;
+	top: calc(105px + 45px);
+	left: calc(150px + 35px);
+}
+
+#pg-map #freccia-000-010 {
+	position: absolute;
+	top: 225px;
+	left: 237px;
+	z-index: 30;
+}
+
+#pg-map #pnl-010 {
+	position: absolute;
+	top: calc(200px + 45px);
+	left: calc(150px + 35px);
+}
+
+#pg-map #freccia-010-020 {
+	position: absolute;
+	top: 320px;
+	left: 237px;
+	z-index: 30;
+}
+
+#pg-map #pnl-020 {
+	position: absolute;
+	top: calc(295px + 45px);
+	left: calc(150px + 35px);
+}
+
+#pg-map #freccia-020-030 {
+	position: absolute;
+	top: 415px;
+	left: 237px;
+	z-index: 30;
+}
+
+#pg-map #pnl-030 {
+	position: absolute;
+	top: calc(390px + 45px);
+	left: calc(138px + 35px);
+}
+
+#pg-map #freccia-030-040 {
+	position: absolute;
+	top: 508px;
+	left: 205px;
+	z-index: 30;
+}
+
+#pg-map #freccia-030-041 {
+	position: absolute;
+	top: 507px;
+	left: 285px;
+	z-index: 30;
+}
+
+#pg-map #pnl-040 {
+	position: absolute;
+    top: calc(485px + 45px);
+    left: calc(85px + 35px);
+}
+
+#pg-map #freccia-040-041 {
+	position: absolute;
+    top: 585px;
+    left: 233px;
+    z-index: 30;
+}
+
+#pg-map #freccia-040-050 {
+	position: absolute;
+	top: 597px;
+	left: 170px;
+	z-index: 30;
+}
+
+#pg-map #pnl-041 {
+	position: absolute;
+    top: calc(485px + 45px);
+    left: calc(220px + 35px);
+}
+
+#pg-map #freccia-041-050 {
+	position: absolute;
+    top: 585px;
+    left: 365px;
+    z-index: 30;
+}
+
+#pg-map #pnl-050 {
+	position: absolute;
+    top: calc(485px + 45px);
+    left: calc(341px + 35px);
+}
+
+#pg-map #freccia-050-051 {
+	position: absolute;
+	top: 503px;
+	left: 440px;
+	z-index: 30;
+}
+
+#pg-map #freccia-050-060 {
+	position: absolute;
+    top: 397px;
+    left: 495px;
+    z-index: 30;
+}
+
+#pg-map #freccia-050-052 {
+	position: absolute;
+	top: 503px;
+	left: 500px;
+	z-index: 30;
+}
+
+#pg-map #pnl-051 {
+	position: absolute;
+	top: calc(390px + 45px);
+	left: calc(355px + 35px);
+}
+
+#pg-map #freccia-051-060 {
+	position: absolute;
+	top: 408px;
+	left: 440px;
+	z-index: 30;
+}
+
+#pg-map #freccia-052-070 {
+	position: absolute;
+	top: 408px;
+	left: 575px;
+	z-index: 30;
+}
+
+#pg-map #freccia-090-110 {
+	position: absolute;
+	top: 218px;
+	left: 575px;
+	z-index: 30;
+}
+
+#pg-map #freccia-110-121 {
+	position: absolute;
+	top: 108px;
+	left: 581px;
+	z-index: 30;
+}
+
+#pg-map #freccia-070-110 {
+	position: absolute;
+    top: 203px;
+    left: 629px;
+    z-index: 30;
+}
+
+#pg-map #pnl-060 {
+	position: absolute;
+	top: calc(295px + 45px);
+	left: calc(342px + 35px);
+}
+
+#pg-map #freccia-060-080 {
+	position: absolute;
+	top: 312px;
+	left: 440px;
+	z-index: 30;
+}
+
+#pg-map #freccia-060-090 {
+	position: absolute;
+    top: 310px;
+    left: 500px;
+    z-index: 30;
+}
+
+#pg-map #pnl-080 {
+	position: absolute;
+	top: calc(200px + 45px);
+	left: calc(355px + 35px);
+}
+
+#pg-map #freccia-080-100 {
+	position: absolute;
+	top: 217px;
+	left: 440px;
+	z-index: 30;
+}
+
+
+#pg-map #pnl-100 {
+	position: absolute;
+	top: calc(105px + 45px);
+	left: calc(355px + 35px);
+}
+
+#pg-map #freccia-100-FA2 {
+	position: absolute;
+	top: 123px;
+	left: 440px;
+	z-index: 30;
+}
+
+#pg-map #pnl-FA2 {
+	position: absolute;
+	top: calc(10px + 45px);
+	left: calc(355px + 35px);
+}
+
+#pg-map #pnl-110 {
+	position: absolute;
+	top: calc(105px + 45px);
+	left: calc(480px + 35px);
+}
+
+#freccia-110-120 {
+    position: absolute;
+    top: 172px;
+    left: 638px;
+    z-index: 30;
+}
+
+#pg-map #pnl-090 {
+	position: absolute;
+	top: calc(200px + 45px);
+	left: calc(490px + 35px);
+}
+
+#pg-map #pnl-070 {
+	position: absolute;
+	top: calc(295px + 45px);
+	left: calc(490px + 35px);
+}
+
+#pg-map #pnl-052 {
+	position: absolute;
+	top: calc(400px + 35px);
+	left: calc(490px + 35px);
+}
+
+#pg-map #pnl-121 {
+	position: absolute;
+	top: calc(10px + 45px);
+	left: calc(625px + 35px);
+}
+
+#freccia-121-131 {
+	position: absolute;
+    left: 772px;
+    top: 108px;
+    z-index: 30;
+}
+
+#pg-map #pnl-131 {
+	position: absolute;
+	top: calc(10px + 45px);
+	left: calc(760px + 35px);
+}
+
+#freccia-131-FA1 {
+    position: absolute;
+    left: 847px;
+    top: 129px;
+    z-index: 30;
+}
+
+#pg-map #pnl-120 {
+	position: absolute;
+	top: calc(105px + 45px);
+	left: calc(625px + 35px);
+}
+
+#freccia-120-130 {
+    position: absolute;
+    left: 713px;
+    top: 224px;
+    z-index: 30;
+}
+
+#pg-map #pnl-130 {
+	position: absolute;
+	top: calc(200px + 45px);
+	left: calc(625px + 35px);
+}
+
+#freccia-130-140 {
+    position: absolute;
+    left: 713px;
+    top: 318px;
+    z-index: 30;
+}
+
+#pg-map #pnl-140 {
+	position: absolute;
+	top: calc(295px + 45px);
+	left: calc(625px + 35px);
+}
+
+#freccia-140-FO {
+	position: absolute;
+    left: 774px;
+    top: 392px;
+    z-index: 30;
+}
+
+#pg-map #pnl-FO {
+	position: absolute;
+	top: calc(295px + 45px);
+	left: calc(760px + 35px);
+}
+
+#pg-map #pnl-FA1 {
+	position: absolute;
+	top: calc(105px + 45px);
+	left: calc(760px + 35px);
+}

@@ -1,0 +1,16 @@
+.gioco .btn-retry {
+	position: absolute;
+	top: 150px;
+	right: 50px;
+	z-index: 20;
+	cursor: pointer;
+}
+
+.gioco .btn-home {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 20;
+	cursor: pointer;
+    transform: scale(0.7);
+}

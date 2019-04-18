@@ -1,0 +1,247 @@
+var game = new Phaser.Game(1000, 700, Phaser.AUTO, 'minigioco_1c_container', { preload: preload_1c, create: create_1c, update: update_1c });
+
+/* 
+- Far spawnare rotella confusione (massimo 5 volte nel giro di 35s)
+- Aggiungere rotella confusione OK
+- Far collidere rotella con player OK
+- Far attivare funzione confused() OK
+- Aggiungere spritesheet animazione confused OK
+- Far partire animazione in confused() OK
+- Dire di loopare l'animazione per 3s e poi far tornare tutto alle condizioni iniziali
+- Dire nella funzione che non ci si può muovere (mettere una variabile ai comandi, se true funzionano. In confused() variabile=false, si esegue un ciclo di animazioni e poi variabile torna true)
+
+
+- Aggiungere proprietà outOfBounds alle choices e legare funzione garbageCollector()
+- garbageCollector(){choices.kill()} -> capire se funziona sui gruppi o solo sui singoli; non serve più specificare la collision
+
+- Aggiungere un tasto "pausa" ? OK
+
+- Fare in modo che il gioco si chiuda davvero e non faccia comparire solo l'alert OK
+
+*/
+
+var background;
+var cartoon;
+var interfaccia;
+var player;
+var facing = 'left';
+var garbageCollector;
+var platform;
+var choices;
+var lie = 'lie';
+var truth = 'truth';
+var confusion = 'confusion';
+var arrow;
+var count = 0;
+var choiceBaseGrav = 100;
+var choiceMaxGrav = 300;
+var choiceGravIncrement = 10;
+var timer;
+var maxCounter = 45;
+var counter = maxCounter;
+var maxNimCounter = 3;
+var nimCounter = maxNimCounter;
+var inConfusion = false;
+
+var keySpacebar;
+var pointCap = 20;
+	
+function preload_1c() {
+	game.load.image('interfaccia', './Assets/Interface.png');	
+	//game.load.spritesheet('player', './Assets/Emperor.png', 141.8, 137, 5);
+	//game.load.spritesheet('confused', './Assets/ConfusedEmperor.png', 141.8, 137, 5);
+	game.load.spritesheet('player', './Assets/Emperor.png', 141.8, 141.8 , 10);
+	game.load.image('background', './Assets/Background.png');
+	game.load.image('lie', './Assets/Lie.png');
+	game.load.image('truth', './Assets/Truth.png');
+	game.load.image('confusion', './Assets/Confusion.png');
+	game.load.image('arrow', './Assets/Arrow.png');
+	game.load.image('cartoon', './Assets/Cartoon.png');
+}
+
+function create_1c() {
+	background = game.add.sprite(0, 0, 'background');
+	background.height = game.height;
+	background.width = game.width;
+	background.x = 0;
+	background.y = 0;
+	
+	cartoon = game.add.sprite(50, 50, 'cartoon');
+	
+	createGarbageCollector();
+	createPlatform();
+
+	choices = game.add.group();
+
+	player = game.add.sprite(200, 200, 'player');
+	game.physics.arcade.enable(player);
+
+	player.body.collideWorldBounds = true;
+	player.body.gravity.y = 500;
+
+	interfaccia = game.add.sprite(1000, 700, 'interfaccia');
+	interfaccia.height = game.height;
+	interfaccia.width = game.width;
+	interfaccia.x = 0;
+	interfaccia.y = 0;
+	
+	arrow = game.add.sprite(500, 675.67, 'arrow');
+	arrow.anchor.setTo(0.5, 1);
+
+	cursors = game.input.keyboard.createCursorKeys();
+	keySpacebar = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+    keySpacebar.onDown.add(togglePause, this);
+	
+	player.animations.add('right', [0, 1], 15, true);
+	player.animations.add('front', [2], 10, true);
+	player.animations.add('left', [3, 4], 15, true);
+	
+	player.animations.add('giggling', [5, 6, 7, 8, 9, 8, 7, 6], 10, true);
+	player.animations.add('over', [8], 10, true);
+	
+	timer = game.add.text(50, 670, counter, { font: "40px Arial black", fill: "#ffffff", align: "center" });
+	timer.anchor.setTo(0.5, 0.5);
+	game.time.events.loop(Phaser.Timer.SECOND, updateCounter, this);
+}
+
+function update_1c () {
+
+	
+	if (game.rnd.integerInRange(0, 29) == 0){
+		spawnChoices();
+	}
+
+    game.physics.arcade.collide(player, platform);
+    if (inConfusion==false) {game.physics.arcade.overlap(player, choices, scorePoints)};
+    game.physics.arcade.collide(choices, garbageCollector, garbageCollection);
+
+	player.body.velocity.x = 0;
+
+	if (cursors.left.isDown && inConfusion == false){
+		player.body.velocity.x = -400;
+		if (facing != 'left'){
+			player.animations.play('left');
+			facing = 'left';
+		}
+	}
+	else if (cursors.right.isDown && inConfusion == false){
+		player.body.velocity.x = 400;
+		if (facing != 'right'){
+			player.animations.play('right');
+			facing = 'right';
+		}
+	}
+	else {
+		if (facing != 'idle'){
+			player.animations.stop();
+			player.animations.play('front');
+			facing = 'idle';
+		}
+	}
+
+	gameOver();
+}
+
+//functions
+
+function spawnChoices() {
+	var positivity = 0;
+	var chosenChoice;
+	var rand = game.rnd.integerInRange(0, 100);
+	if(rand >= 90){
+		chosenChoice = confusion;
+		positivity = 0;
+	}
+	else if (rand >= 45){
+		chosenChoice = truth;
+		positivity = 1;
+	} else {
+		chosenChoice = lie;
+		positivity = -1;
+	}
+
+	var x = game.rnd.integerInRange(50, 750);
+	var y = -100;
+
+	var choice = game.add.sprite(x, y, chosenChoice);
+	choice.positivity = positivity;
+	choice.name = chosenChoice;
+	choices.add(choice);
+
+	game.physics.arcade.enable(choice);
+
+	choice.body.collideWorldBounds = false;
+	if (choice.body.gravity.y < choiceMaxGrav) {
+		choice.body.gravity.y = choiceBaseGrav + choiceGravIncrement * Math.floor((maxCounter - counter)/5) * 4;
+	} else {
+		choice.body.gravity.y = choiceMaxGrav;
+	}
+}
+
+function createPlatform(){
+	platform = game.add.sprite(0, 700, null);
+	game.physics.arcade.enable(platform);
+	platform.body.setSize(1000, 75, 0, 0);
+	platform.body.collideWorldBounds = true;
+}
+
+function scorePoints(player, choice){
+	count += choice.positivity;
+	arrow.angle += choice.positivity*4.5;
+	garbageCollection(choice);
+	console.log(count);
+	if(choice.name == 'confusion'){
+		confused();
+	}
+}
+
+function createGarbageCollector(){
+	garbageCollector = game.add.sprite(0, 600, null);
+	game.physics.arcade.enable(garbageCollector);
+	garbageCollector.body.setSize(1000, 80, 0, 0);
+}
+
+function garbageCollection(choice){
+	choices.remove(choice, true, true);
+	choice.kill();
+}
+
+function gameOver() {
+	if(count >= pointCap){
+		togglePause();
+		alert("verità");
+	}
+	else if (count <= -pointCap){
+		togglePause();
+		alert("menzogna");
+	}
+	else if (counter==0){
+		player.animations.play('over');
+		togglePause();
+    	alert("L'imperatore è andato in panico ed è svenuto!");		
+	}
+}
+
+function updateCounter() {
+    counter = counter - 1;
+    timer.setText(counter);
+	if (inConfusion == true) {
+		nimCounter = nimCounter - 1;
+		if(nimCounter <= 0){
+			inConfusion = false;
+			player.animations.stop('giggling');
+			player.animations.play('front');
+		}
+	}
+}
+
+function confused(){
+	player.animations.play('giggling');
+	inConfusion = true;
+	nimCounter = maxNimCounter;
+	//alert('BLAH!');
+}
+
+function togglePause(){
+	game.paused = !game.paused;
+}
